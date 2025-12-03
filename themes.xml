@@ -1,0 +1,16 @@
+<resources>
+    <style name="Theme.CalculatorAssignment" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="android:colorBackground">#212020</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textColorSecondary">#333333</item>
+        <item name="colorPrimary">#222222</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#333333</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="colorSurface">#222222</item>
+        <item name="colorOnSurface">#FFFFFF</item>
+        <item name="colorPrimaryContainer">#444444</item>
+        <item name="colorOnPrimaryContainer">#FFFFFF</item>
+
+    </style>
+</resources>

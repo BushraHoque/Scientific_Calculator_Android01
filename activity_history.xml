@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#817F87">
+
+    <!-- back button -->
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:background="@drawable/button_sci_bg"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"/>
+
+    <!-- show title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="History"
+        android:textSize="28sp"
+        android:textColor="#FFFFFF"
+        android:paddingTop="18dp"
+        android:paddingBottom="10dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <!-- all list of history-->
+    <ListView
+        android:id="@+id/listHistory"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="12dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"/>
+</LinearLayout>

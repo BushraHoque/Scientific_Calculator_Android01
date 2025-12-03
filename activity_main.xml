@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="#565151">
+
+    <!-- previous equation show -->
+    <TextView
+        android:id="@+id/tvsec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="#FFFFFF"
+        android:gravity="end"
+        android:padding="4dp"/>
+
+    <!-- main equation show -->
+    <TextView
+        android:id="@+id/tvmain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="40sp"
+        android:textColor="#FFFFFF"
+        android:gravity="end"
+        android:padding="4dp"/>
+
+
+
+    <!-- row 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <Button android:id="@+id/bAC" android:text="AC" style="@style/CalcBtn"/>
+        <Button android:id="@+id/bC" android:text="C" style="@style/CalcBtn"/>
+        <Button android:id="@+id/bopen" android:text="(" style="@style/CalcBtn"/>
+        <Button android:id="@+id/bclose" android:text=")" style="@style/CalcBtn"/>
+        <Button android:id="@+id/bpercent" android:text="%" style="@style/CalcBtn"/>
+    </LinearLayout>
+
+    <!-- row 2 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <Button android:id="@+id/bsin" android:text="sin" style="@style/CalcSci"/>
+        <Button android:id="@+id/bcos" android:text="cos" style="@style/CalcSci"/>
+        <Button android:id="@+id/btan" android:text="tan" style="@style/CalcSci"/>
+        <Button android:id="@+id/blog" android:text="log" style="@style/CalcSci"/>
+        <Button android:id="@+id/bln" android:text="ln" style="@style/CalcSci"/>
+    </LinearLayout>
+
+    <!-- row 3 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <Button android:id="@+id/bfact" android:text="x!" style="@style/CalcSci"/>
+        <Button android:id="@+id/bsquare" android:text="x²" style="@style/CalcSci"/>
+        <Button android:id="@+id/bsqrt" android:text="√" style="@style/CalcSci"/>
+        <Button android:id="@+id/binv" android:text="1/x" style="@style/CalcSci"/>
+        <Button android:id="@+id/bpi" android:text="π" style="@style/CalcSci"/>
+    </LinearLayout>
+
+    <!-- row 4 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <Button android:id="@+id/b7" android:text="7" style="@style/CalcBtn"/>
+        <Button android:id="@+id/b8" android:text="8" style="@style/CalcBtn"/>
+        <Button android:id="@+id/b9" android:text="9" style="@style/CalcBtn"/>
+        <Button android:id="@+id/bmul" android:text="×" style="@style/CalcOp"/>
+        <Button android:id="@+id/bpow" android:text="^" style="@style/CalcSci"/>
+    </LinearLayout>
+
+    <!-- row 5 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <Button android:id="@+id/b4" android:text="4" style="@style/CalcBtn"/>
+        <Button android:id="@+id/b5" android:text="5" style="@style/CalcBtn"/>
+        <Button android:id="@+id/b6" android:text="6" style="@style/CalcBtn"/>
+        <Button android:id="@+id/bminus" android:text="−" style="@style/CalcOp"/>
+        <Button android:id="@+id/bmod" android:text="mod" style="@style/CalcSci"/>
+    </LinearLayout>
+
+    <!-- row 6 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <Button android:id="@+id/b1" android:text="1" style="@style/CalcBtn"/>
+        <Button android:id="@+id/b2" android:text="2" style="@style/CalcBtn"/>
+        <Button android:id="@+id/b3" android:text="3" style="@style/CalcBtn"/>
+        <Button android:id="@+id/bplus" android:text="+" style="@style/CalcOp"/>
+        <Button android:id="@+id/bans" android:text="Ans" style="@style/CalcSci"/>
+    </LinearLayout>
+
+    <!-- row 7 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <Button android:id="@+id/b0" android:text="0" style="@style/CalcBtn"/>
+        <Button android:id="@+id/bdot" android:text="." style="@style/CalcBtn"/>
+        <Button android:id="@+id/bequal" android:text="=" style="@style/CalcOp"/>
+        <Button android:id="@+id/bdiv" android:text="÷" style="@style/CalcOp"/>
+        <Button android:id="@+id/bplusminus" android:text="±" style="@style/CalcSci"/>
+    </LinearLayout>
+
+    <!-- history -->
+    <Button
+        android:id="@+id/btnHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="History"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/history_button"
+        android:textAllCaps="false"/>
+
+</LinearLayout>
